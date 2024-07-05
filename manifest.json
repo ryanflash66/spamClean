@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail Spam Cleaner",
+    "version": "1.0",
+    "description": "Automatically delete spam emails in Gmail.",
+    "permissions": [
+      "identity",
+      "identity.email",
+      "https://www.googleapis.com/"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "oauth2": {
+      "client_id": "333228088982-r4cpnkklg9tnrtnfsi3qi5905es6kovq.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ]
+    }
+  }
+  
